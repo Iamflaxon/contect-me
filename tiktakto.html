@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me on Messenger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: lightyellow;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Me on Messenger</h1>
+    <p>Click the button below to send me a message on Messenger.</p>
+    <button onclick="contactOnMessenger()">Contact Me</button>
+
+    <script>
+        function contactOnMessenger() {
+            const messengerUsername = "Istiak Hosen Iftee";
+            const messengerUrl = `https://m.me/${encodeURIComponent(messengerUsername)}`;
+            window.open(messengerUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
+
+
